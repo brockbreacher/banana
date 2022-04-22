@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<script>
+var audio = new Audio("banana.mp3");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+
+var count = 0;
+
+function a() {
+  count++;
+  if (count == 5)
+    audio2.play()
+}
+
+var audio2 = new Audio("Bananaphone.mp3");
+
+audio2.oncanplaythrough = function(){
+audio2.play();
+}
+
+</script>
+
+<head>
+
+<meta property="og:title" content="Banana." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://banana.brbr.xyz" />
+<meta property="og:image" content="https://banana.brbr.xyz/banana.png" />
+<meta property="og:description" content="Banana." />
+<meta name="theme-color" content="#ffe135">
+
+<style>/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+</style>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Banana.</title>
+</head>
+<body>
+<center><input type="image" src="banana.png" onclick="audio.play()"></center>
+<center><h1><font size="+50"><p onclick="a()">Banana.</p></font></h1></center>
+</body>
+</html>
